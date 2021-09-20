@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Sanghyuk Moon&#39;s Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style_others.css">
+</head>
+
+<body>
+  <h2>Debugging tips</h2>
+  <h3>AddressSanitizer</h3>
+  <ul>
+    <li> Compile with <tt>-fsanitize=address</tt> to detect memory errors such as out-of-bound access
+    <li> For complete description, see <a href="https://github.com/google/sanitizers/wiki/AddressSanitizer">https://github.com/google/sanitizers/wiki/AddressSanitizer</a>
+    <li> Compile a specific file seperately with -fsanitize=address (not in the Makefile) to investigate that file alone. You have to relink with -fsanitize=address
+  </ul>
+  <h3>Floating point exception</h3>
+    <tt>
+      #include &lt;fenv.h&gt;<br>
+      feenableexcept(FE_DIVBYZERO | FE_INVALID | FE_OVERFLOW);
+    </tt>
+    <ul>
+      <li> For complete description, see <a href="https://linux.die.net/man/3/feenableexcept">https://linux.die.net/man/3/feenableexcept</a>
+    </ul>
+  <h3>Parallel debugging with gdb</h3>
+    <a href="https://www.open-mpi.org/faq/?category=debugging#general-parallel-debugging">https://www.open-mpi.org/faq/?category=debugging#general-parallel-debugging</a> 
+  <address>Last update : 3 April 2019 by S. Moon</address>
+</body>
+
+</html>

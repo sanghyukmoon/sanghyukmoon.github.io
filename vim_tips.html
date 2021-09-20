@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Sanghyuk Moon&#39;s Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style_others.css">
+</head>
+
+<body>
+  <h2>VIM tips</h2>
+    <h3>Syntax highlighting for files with odd extensions</h3>
+      Say you have a working code <tt>main.cpp</tt> and a backup code <tt>main.cpp.bck</tt>. You display them in a single window by <tt>:vsp</tt>. You will notice the text for the file <tt>main.cpp.bck</tt> is not highlighted properly because the file name does not end with <tt>.cpp</tt>. In that case, simply type <tt>:set syntax=cpp</tt>.
+
+    <h3>Enable mouse for a terminal VIM</h3>
+      Do you use <tt>gvim</tt> just because it supports mouse? you can use mouse also in <tt>vim</tt>! Just type <tt>:set mouse=a</tt> (see <tt>:help mouse</tt>). You can drag the vertical split line to adjust the window size. You can do <tt>visual</tt> selection using your mouse.
+
+    <h3>Execute python script inside VIM by pressing &ltF9></h3>
+      <tt>autocmd FileType python nnoremap &lt;buffer&gt; &lt;F9&gt; :exec '!python' shellescape(@%, 1)<cr></tt>
+
+    <h3>Recommended Plugins</h3>
+      <ul>
+        <li> <tt>vim-plug</tt> : Manage vim plugins
+        <li> <tt>FastFold</tt> : Make vim fold fast
+        <li> <tt>NERDTree</tt> : Explore file system in vim
+        <li> <tt>ultisnips</tt> : Enable snippets
+        <li> <tt>vim-snippets</tt> : Add snippets for <tt>ultisnips</tt>
+        <li> <tt>vimtex</tt> : Edit your latex manuscript with vim!
+        <li> <tt>Tagbar</tt> : Outline your code (including latex!)
+      </ul>
+      For completion, I use native keyword (&lt;C-N&gt;) and omni (&lt;C-X&gt;&lt;C-O&gt;) completion.
+  <address>Last update : 27 Aug 2020 by S. Moon</address>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Sanghyuk Moon&#39;s Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style_others.css">
+</head>
+
+<body>
+  <h2>Using official python distribution with pip</h2>
+  <h3>Build from the source</h3>
+    <ul>
+      <li>Download latest source release for BOTH python2 and python3 from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.
+      <li>Configure: <tt>$ ./configure --enable-optimizations --with-lto --prefix=/usr/local</tt>
+      <li>Build: <tt>$ make</tt>
+      <li>Install: first, you should choose which version (2 or 3) is your "primary" version.<br>
+          Type <tt>$ sudo make install</tt> in your primary version directory.<br>
+          Type <tt>$ sudo make altinstall</tt> in your secondary version directory.<br>
+          (see <i>Installing multiple versions</i> in <tt>README</tt>)
+    </ul>
+  <h3>Create virtual environment</h3>
+    venv (or virtualenv)
+    <ul>
+      <li> For python3, see <a href="https://docs.python.org/3.6/installing/index.html?highlight=virtual%20environment">https://docs.python.org/3.6/installing/index.html?highlight=virtual%20environment</a>
+      <li> For python2, see <a href="https://docs.python.org/2.7/installing/index.html?highlight=virtual%20environment">https://docs.python.org/2.7/installing/index.html?highlight=virtual%20environment</a>
+      <li> python3 -m venv ~/py3
+      <li> virtualenv --python=python2.7 ~/py2
+    </ul>
+  <h3>For easy use...</h3>
+    in bashrc...
+    <ul>
+      <li> <tt>alias py3='deactivate; source ~/py3/bin/activate'</tt>
+      <li> <tt>alias py2='deactivate; source ~/py2/bin/activate'</tt>
+      <li> <tt>source ~/py3/bin/activate</tt>
+    </ul>
+  <h2>Using Anaconda distribution</h2>
+  <address>Last update : 07 June 2019 by S. Moon</address>
+</body>
+
+</html>
