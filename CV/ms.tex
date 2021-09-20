@@ -1,0 +1,131 @@
+%%
+%% This is file `cvtest.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% currvita.dtx  (with options: `testfile')
+%% 
+%% LaTeX sample file for the currvita package
+%% 
+%% Copyright (C) 1999 Axel Reichert
+%% See the files README and COPYING.
+%% 
+%% \CharacterTable
+%%   {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\documentclass[11pt,a4paper]{article}
+\usepackage[NoDate]{currvita}
+\usepackage{bibunits}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=NavyBlue]{hyperref}
+\begin{document}
+
+%\setlength{\cvlabelwidth}{18mm}
+
+\nocite{*} % include a list of publications without citing them.
+\bibliographystyle{plain}
+
+%\begin{cv}{Sanghyuk Moon $\vert$ {\rm \color{SkyBlue} Curriculum Vitae}}
+\begin{cv}{\LARGE {\color{NavyBlue}Sanghyuk Moon\href{https://orcid.org/0000-0002-6302-0485}{\includegraphics[width=0.25in]{orcid.pdf}}} $\vert$ {\normalfont \color{Gray}Curriculum Vitae}}
+  \begin{flushright}
+    \color{Gray}
+    Astronomy Program, Department of Physics \& Astronomy\\
+    Seoul National University, Seoul, 08826, Republic of Korea\\
+    \includegraphics[width=0.2in]{email.pdf}s.moon@snu.ac.kr   
+  \end{flushright}
+
+
+  \begin{cvlist}{\color{NavyBlue}Education}
+    \item[06/2022 {\scriptsize (expected)}] {\bf Ph.D in Astronomy}, Seoul National University, Korea\\
+                \emph{Advisor: Woong-Tae Kim}
+    \item[06/2016] {\bf B.S. in Astronomy (minor: physics)}, Seoul National University, Korea
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Honors and Awards}
+    \item[2017--2022] {\bf Global Ph.D. Fellowship} ({\small Sallary obtained from NRF: \$26,000/{\it yr}})\\
+                      \emph{\small Dynamical Evolution and Star Formation in Central Molecular Zones}
+    \item[2016--2017] {\bf Lecture \& Research Scholarship}
+    \item[2015] {\bf National Scholarship for Science and Engineering}
+    \item[2014] {\bf SNU Development Fund Scholarship}
+    \item[2013] {\bf ASAN foundation Scholarship}
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Code Development Contributions}
+    \item [2021--present] Core developer of {\tt TIGRIS} project (PI: Chang-Goo Kim)\\
+      \emph{\small Self-gravity with shearing-periodic, open, and mixed boundary conditions}
+    \item [2018--2019] Poisson solver with open boundary conditions for Cartesian and cylindrical grids in {\tt Athena++}\\
+      \emph{\small Used in Mullen \& Gammie (2020), Baehr et al. (in prep)}
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Publications}
+    \item [Refereed] {\bf Moon, S.}, Kim, W.-T., Kim, C.-G., and Ostriker, E. C., \href{https://ui.adsabs.harvard.edu/abs/2021ApJ...914....9M/abstract}{\it Star Formation in Nuclear Rings with the TIGRESS Framework}, ApJ, 914, 9, 2021
+    \item [] {\bf Moon, S.}, Kim, W.-T., and Ostriker, E. C., \href{https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract}{\it A Fast Poisson Solver of Second-order Accuracy for Isolated Systems in Three-dimensional Cartesian and Cylindrical Coordinates}, ApJS, 241, 24, 2019
+    \item [] Kim, W.-T. and {\bf Moon, S.}, \href{https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract}{\it Equilibrium Sequences and Gravitational Instability of Rotating Isothermal Rings}, ApJ, 829, 45, 2016
+    \item [Proceedings] {\bf Moon, S.}, \href{https://ui.adsabs.harvard.edu/abs/2020JPhCS1623a2017M/abstract}{\it Three-Dimensional Cylindrical Poisson Solver with Vacuum Boundary Conditions}, J. Phys.: Conf. Ser., 1623, 012017
+    \item [In Preperation] {\bf Moon, S.}, Kim, W.-T., Kim, C.-G., and Ostriker, E. C., {\it \color{NavyBlue}Effects of Varying Mass Inflows on Star Formation in Nuclear Rings of Barred Galaxies}{\it, in prep.}
+    \item [] {\bf Moon, S.}, Kim, W.-T., Kim, C.-G., and Ostriker, E. C., {\it \color{NavyBlue}Effects of Magnetic Field on Star Formation in Nuclear Rings of Barred Galaxies}{\it, in prep.}
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Presentations}
+    \item [11/2021] {\bf Seminar}, Internal Group Meeting, Heidelberg, Germany (virtual)
+    \item [11/2021] {\bf Seminar}, CCA Group Meeting, New York, USA (virtual)
+    \item [10/2021] {\bf Contributed Talk}, 2021 KAS Fall Meeting, Seoul, Korea
+    \item [04/2021] {\bf Contributed Talk}, 2021 KAS Spring Meeting, Seoul, Korea
+    \item [01/2021] {\bf Workshop Talk}, 2nd Numerical Galaxy Formation Mini-Workshop, Seoul, Korea
+    \item [01/2020] {\bf Workshop Talk}, Numerical Galaxy Formation Mini-Workshop, Seoul, Korea
+    \item [11/2019] {\bf Invited Seminar}, Star Formation/ISM Rendezvous (SFIR), Princeton, USA
+    \item [07/2019] {\bf Invited Talk}, ASTRONUM 2019, Paris, France
+    \item [04/2019] {\bf Contributed Talk}, 2019 KAS Spring Meeting, Seoul, Korea
+    \item [03/2019] {\bf Invited Talk}, ATHENA++ workshop 2019, Las Vegas, USA
+    \item [10/2016] {\bf Poster}, 2016 KAS Fall Meeting, Seoul, Korea
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Research Experience}
+    \item [10/2019--12/2019] {\bf Princeton University} (two months; \emph{Mentor}: Prof. Eve C. Ostriker)\\
+      \emph{\small Visiting Student Research Collaborator}
+    \item [01/2019--01/2019] {\bf Princeton University} (two weeks; \emph{Mentor}: Prof. Eve C. Ostriker)
+    \item [07/2018--08/2018] {\bf Princeton University} (two weeks; \emph{Mentor}: Prof. Eve C. Ostriker)
+    \item [12/2017--12/2017] {\bf Osaka University} (four days; \emph{Mentor}: Prof. Kengo Tomida)
+  \end{cvlist}
+ 
+  \begin{cvlist}{\color{NavyBlue}Competitively-Obtained Computing Time}
+    \item [2021] {\bf National Supercomputing Center, KISTI, Korea} {\small ($1.4\times 10^7$ core-hours)}\\
+      \emph{\small Co-I: Effects of Magnetic Fields on Star Formation in Galactic Nuclear Rings and Formation of Circumnuclear Disks}
+    \item [2019] {\bf National Supercomputing Center, KISTI, Korea} {\small ($2.0\times 10^7$ core-hours)}\\
+      \emph{\small Co-I: Understanding Star Formation in Centers of Disk Galaxies}
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Computing skills}
+    \item [Language] C/C{\tt ++}, MPI, Python
+    \item [CFD codes] Athena, Athena{\tt ++}, GIZMO
+    \item [Other tools] GDB, yt, Pynbody, VisIt
+  \end{cvlist}
+
+  \begin{cvlist}{\color{NavyBlue}Professional Services and Teaching Experience}
+    \item [2021--\emph{present}] {\bf Founder and Organizer}, SNU Astronomy Graduate Student Journal Club
+    \item [2018--2019] {\bf Founder and Organizer}, SNU Astronomy Graduate Student Colloquium
+    \item [2017] {\bf Teaching Assistant}, Computational Astronomy
+    \item [2016] {\bf Teaching Assistant}, Introduction to Astrophysics
+  \end{cvlist}
+
+
+\end{cv}
+\end{document}
+\endinput
+%%
+%% End of file `cvtest.tex'.
