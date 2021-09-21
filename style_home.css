@@ -12,17 +12,15 @@ body {
   line-height: 1.5em;
 }
 
-img {
+img#profile {
   float: left;
   margin-right: 1em;
-  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 h1, h2, h3 {
   font-family: "Verdana", sans-serif;
   text-align: left;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
   color: DarkSlateGrey;
 }
 
@@ -39,4 +37,8 @@ address {
 
 a {
   color: MidnightBlue;
+}
+
+div#pub {
+  clear: both;
 }
