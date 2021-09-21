@@ -53,3 +53,7 @@ a {
 div#pub {
   clear: both;
 }
+
+div#pub h2 {
+  display: inline;
+}
