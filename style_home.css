@@ -7,9 +7,20 @@ body {
   text-align: left;
   margin-top: 5em;
   margin-bottom: 5em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5em;
+  max-width: 1000px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+  display: block;
 }
 
 img#profile {
