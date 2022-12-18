@@ -27,8 +27,7 @@
 %%   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %%   Right brace   \}     Tilde         \~}
 \documentclass[11pt,a4paper]{article}
-\usepackage[NoDate]{currvita}
-\usepackage{bibunits}
+\usepackage{currvita}
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{marvosym}
@@ -42,35 +41,36 @@
 \nocite{*} % include a list of publications without citing them.
 \bibliographystyle{plain}
 
-%\begin{cv}{Sanghyuk Moon $\vert$ {\rm \color{SkyBlue} Curriculum Vitae}}
-\begin{cv}{\LARGE {\color{NavyBlue}Sanghyuk Moon\href{https://orcid.org/0000-0002-6302-0485}{\includegraphics[width=0.25in]{orcid.pdf}}} $\vert$ {\normalfont \color{Gray}Curriculum Vitae}}
+\renewcommand*{\cvheadingfont}{\LARGE\bfseries}
+
+\begin{cv}{{\color{NavyBlue}Sanghyuk Moon\href{https://orcid.org/0000-0002-6302-0485}{\includegraphics[width=0.25in]{orcid.pdf}}} $\vert$ {\normalfont \color{Gray}Curriculum Vitae}}
   \begin{flushright}
     \color{Gray}
-    Astronomy Program, Department of Physics \& Astronomy\\
-    Seoul National University, Seoul, 08826, Republic of Korea\\
-    \Telefon~(+82)-10-4944-7405\\
-    \Letter~\href{mailto:s.moon@snu.ac.kr}{s.moon@snu.ac.kr}
+    Department of Astrophysical Sciences\\
+    Princeton University, Princeton, NJ 08544, USA\\
+    \Telefon~+1 (609) 917-6347\\
+    \Letter~\href{mailto:sanghyuk.moon@princeton.edu}{sanghyuk.moon@princeton.edu}
   \end{flushright}
 
+  \begin{cvlist}{\color{NavyBlue}Employment}
+    \item[10/2022--\textit{present}] \textbf{Postdoctoral Research Associate}, Princeton University
+  \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Education}
-    \item[08/2022 {\scriptsize (expected)}] \textbf{Ph.D in Astronomy}, Seoul National University\\
-                \emph{Advisor: Prof. Woong-Tae Kim}
-    \item [10/2019--12/2019] \textbf{Visiting Student Research Collaborator}, Princeton University\\
-                \emph{Advisor: Prof. Eve C. Ostriker}
-    \item[08/2016] \textbf{B.S. in Astronomy (minor: physics)}, Seoul National University\\
-                \emph{Advisor: Prof. Woong-Tae Kim}
+    \item[09/2016--08/2022] \textbf{Ph.D in Astronomy}, Seoul National University
+    \item[03/2012--08/2016] \textbf{B.S. in Astronomy (minor: physics)}, Seoul National University
   \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Honors}
-    \item[2017--2022] \textbf{Global Ph.D. Fellowship}, National Research Foundation of Korea
+    \item[08/2022] \textbf{Best PhD Thesis Award}, SNU CNS
+    \item[03/2017--02/2022] \textbf{Global Ph.D. Fellowship}, NRF Korea
   \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Code Development Contributions}
-    \item [2021--present] Core developer of \texttt{TIGRIS} project (PI: Chang-Goo Kim)\\
-      \emph{\small Self-gravity with shearing-periodic, open, and mixed boundary conditions in \texttt{Athena++}}
+    \item [2021--\textit{present}] Core developer of \texttt{TIGRIS} project (PI: Chang-Goo Kim)\\
+      \textit{\small Self-gravity with shearing-periodic, open, and mixed boundary conditions in \texttt{Athena++}}
     \item [2018--2019] Poisson solver with open boundary conditions for Cartesian and cylindrical grids in \texttt{Athena++}\\
-      \emph{\small Algorithm development and MPI-parallel implementation.}
+      \textit{\small Algorithm development and MPI-parallel implementation.}
   \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Publications}
@@ -81,39 +81,33 @@
   \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Presentations}
-    \item [08/2022] \textbf{Contributed Talk}, IAUS373, Busan, Korea (\emph{e-talk})
+    \item [08/2022] \textbf{Contributed Talk}, IAUS373, Busan, Korea (\textit{e-talk})
     \item [06/2022] \textbf{Poster}, AAS240, Pasadena, USA
     \item [04/2022] \textbf{Contributed Talk}, 2022 KAS Spring Meeting, Busan, Korea
     \item [01/2022] \textbf{Seminar}, TAG Special Seminar, KASI, Daejeon, Korea
-    \item [01/2022] \textbf{Workshop}, Origins Workshop, Salt Lake City, USA (\emph{virtual})
-    \item [11/2021] \textbf{Seminar}, Internal Group Meeting, Heidelberg, Germany (\emph{virtual})
-    \item [11/2021] \textbf{Seminar}, CCA Group Meeting, New York, USA (\emph{virtual})
+    \item [01/2022] \textbf{Workshop}, Origins Workshop, Salt Lake City, USA (\textit{virtual})
+    \item [11/2021] \textbf{Seminar}, Internal Group Meeting, Heidelberg, Germany (\textit{virtual})
+    \item [11/2021] \textbf{Seminar}, CCA Group Meeting, New York, USA (\textit{virtual})
     \item [10/2021] \textbf{Contributed Talk}, 2021 KAS Fall Meeting, Jeju, Korea
-    \item [04/2021] \textbf{Contributed Talk}, 2021 KAS Spring Meeting (\emph{virtual})
-    \item [01/2021] \textbf{Workshop}, 2nd Numerical Galaxy Formation Mini-Workshop, Seoul, Korea (\emph{virtual})
+    \item [04/2021] \textbf{Contributed Talk}, 2021 KAS Spring Meeting (\textit{virtual})
+    \item [01/2021] \textbf{Workshop}, 2nd Numerical Galaxy Formation Mini-Workshop, Seoul, Korea (\textit{virtual})
     \item [01/2020] \textbf{Workshop}, Numerical Galaxy Formation Mini-Workshop, Seoul, Korea
     \item [11/2019] \textbf{Seminar}, Star Formation/ISM Rendezvous, Princeton, USA
     \item [07/2019] \textbf{Invited Talk}, ASTRONUM 2019, Paris, France
     \item [04/2019] \textbf{Contributed Talk}, 2019 KAS Spring Meeting, Busan, Korea
-    \item [03/2019] \textbf{Workshop}, ATHENA++ workshop 2019, Las Vegas, USA (\emph{invited})
+    \item [03/2019] \textbf{Workshop}, ATHENA++ workshop 2019, Las Vegas, USA (\textit{invited})
     \item [10/2016] \textbf{Poster}, 2016 KAS Fall Meeting, Daejeon, Korea
   \end{cvlist}
  
   \begin{cvlist}{\color{NavyBlue}Competitively-Obtained Computing Time}
     \item [2021] \textbf{National Supercomputing Center, KISTI, Korea} {\small ($1.4\times 10^7$ core-hours)}\\
-      \emph{\small Co-I: Effects of Magnetic Fields on Star Formation in Galactic Nuclear Rings and Formation of Circumnuclear Disks}
+      \textit{\small Co-I: Effects of Magnetic Fields on Star Formation in Galactic Nuclear Rings and Formation of Circumnuclear Disks}
     \item [2019] \textbf{National Supercomputing Center, KISTI, Korea} {\small ($2.0\times 10^7$ core-hours)}\\
-      \emph{\small Co-I: Understanding Star Formation in Centers of Disk Galaxies}
-  \end{cvlist}
-
-  \begin{cvlist}{\color{NavyBlue}Computing skills}
-    \item [Language] C/C\texttt{++}, MPI, OpenMP, Python, Bash, HTML
-    \item [CFD codes] Athena, Athena\texttt{++}, GIZMO
-    \item [Other tools] GDB, Valgrind, Git, Jupyter, yt, pynbody, VisIt
+      \textit{\small Co-I: Understanding Star Formation in Centers of Disk Galaxies}
   \end{cvlist}
 
   \begin{cvlist}{\color{NavyBlue}Departmental Services and Teaching Experience}
-    \item [2021--\emph{present}] \textbf{Founder and Organizer}, SNU Astronomy Graduate Student Journal Club
+    \item [2021--2022] \textbf{Founder and Organizer}, SNU Astronomy Graduate Student Journal Club
     \item [2019] \textbf{Founding Member}, SNU Open Astronomy Innovation Group
     \item [2018--2019] \textbf{Founder and Organizer}, SNU Astronomy Graduate Student Colloquium
     \item [2017] \textbf{Graduate Student Representative} in SNU Astronomy Department
