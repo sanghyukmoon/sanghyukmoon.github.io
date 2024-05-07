@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+
 html {
   padding: 20pt;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'MaruBuri-Regular', 'Helvetica', 'sans-serif';
   font-size: larger;
   color: black;
   background-color: #BCB69C;
@@ -34,7 +42,7 @@ img#profile {
 }
 
 h1, h2, h3 {
-  font-family: "Verdana", sans-serif;
+  font-family: 'MaruBuri-Regular', "Verdana", sans-serif;
   text-align: left;
   color: DarkSlateGrey;
 }
