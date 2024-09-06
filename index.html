@@ -13,22 +13,65 @@
 </head>
 
 <body>
+  <div class="content">
   <h1>Sanghyuk Moon (문상혁)</h1>
- 
-  <img id='profile', src="me.png", width="300">
-  <h2> About </h2>
-  <p>
-  I am currently a postdoctoral research associate at Princeton University. I use theory and numerical simulations to gain understanding of astronomical processes. My main research interests are 1) formation and evolution of prestellar cores and 2) star formation and gas dynamics in barred galaxies. I am also interested in dynamo processes producing large-scale galactic magnetic fields. I completed my Ph.D. at Seoul National University in 2022.
-  </p>
-  <p>
-  Contact: sanghyuk.moon at princeton.edu
-  </p>
 
-  <div id='pub'>
-    <h2>Publications</h2>
+  <div class="row" style="display: flex;">
+    <div class="column" style="width: 35%; padding-right: 0px; padding-top: 25px;">
+      <img id='profile', src="me.png", width="300", border="2">
+    </div>
+    <div class="column" style="width: 65%;">
+      <h2 style="padding-top:0;"> About </h2>
+      <p>
+      Hi! I am Sanghyuk Moon, a postdoctoral research associate at Princeton University.
+      I study star formation using theory and numerical simulations.
+      Questions that I am trying to answer include 1) what are the physical conditions that trigger the <i>onset</i> of the prestellar core collapse? 2) what physics determine the mass function of cores and how is it related to the initial mass function? 3) what controls the star formation at the centers of barred galaxies?
+      </p>
+      <p>
+      I grew up in South Korea, where I completed my Ph.D. in 2022 at <a href="https://astron.snu.ac.kr/en/">Seoul National University (SNU)</a> with my advisor <a href="http://astro.snu.ac.kr/~wkim/">Woong-Tae Kim</a>.
+      </p>
+      <p>
+      <img id='email', src="email.png", width="30">
+      Contact: sanghyuk.moon at princeton dot edu<br>
+      <img id='cv', src="curriculum-vitae.png", width="30">
+      Resume: <a href="CV/cv.pdf">Link to my CV</a>
+      </p>
+    </div>
+  </div>
+ 
+
+  <h2>Research</h2>
+    <h4> Quasi-equilibrium model for turbulent cores </h4>
+      A classical model for the structure and stability of prestellar cores is the Bonnor-Ebert sphere (BES).
+      However, the BES does not take into account the internal turbulent motions within the cores, which are inherited from their turbulent formation environments.
+      In <a href="https://arxiv.org/abs/2409.03226">Moon &amp; Ostriker (2024)</a>, we obtain a family of equilibrium solutions to the angle-averaged continuity and momentum equations with minimal assumptions: 1) turbulence is statistically isotropic and obeys a power-law linewidth-size relationship and 2) bulk rotation is negligible (but allowing radial infall motion).
+      The stability of the resulting "turbulent equilibrium sphere (TES)" critically depends on the strength of turbulence.
+
+    <h4> Critical condition for collapse </h4>
+      Stars form from a dense core, but not every core forms a star.
+      In <a href="https://arxiv.org/abs/2409.03226">Moon &amp; Ostriker (2024)</a>, we propose a scenario that the fate of a core is determined by not only the internal density and turbulence but also by the gravitational potential landscape around the core.
+      The quantitative test of this scenario using a suite of numerical simulations will be presented in the forthcoming paper.
+    <h4> Star formation in nuclear rings </h4>
+      In a series of papers, we use controlled numerical simulations to study the effects of various physical processes including gravitational instability, supernova feedback, (time-varying and spatially asymmetric) mass inflows along the bar, and magnetic fields on the star formation in nuclear rings at the barred galaxy centers.
+      <a href=https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract>Kim &amp; Moon (2016)</a>
+      <a href=https://ui.adsabs.harvard.edu/abs/2021ApJ...914....9M/abstract>Moon et al. (2021)</a>
+      <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>Moon et al. (2022)</a>
+      <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>Moon et al. (2023)</a>
+
+    <h4> Self-gravity in cylindrical grid </h4>
+    Solving the Poisson equation under the open (vacuum) boundary conditions is a non-trivial problem.
+    In particular, there has been a lack of efficient algorithm that works in cylindrical/spherical grids.
+    In <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract">Moon, Kim, &amp; Ostriker (2019)</a>, we show that the algorithm introduced by <a href="https://ui.adsabs.harvard.edu/abs/1977JCoPh..25...71J/abstract">James (1977)</a> (see also <a href="https://ui.adsabs.harvard.edu/abs/1976CoPhC..12...33L/abstract">Lackner (1976)</a>) can be generalized to cylindrical coordinate system, providing an efficient self-gravity solver in cylindrical coordinate system.
+    A version of the Athena++ code that implements this algorithm in 3D Cartesian and cylindrical grids can be found in <a href="https://github.com/sanghyukmoon/athena-public-version">https://github.com/sanghyukmoon/athena-public-version</a>.
+
+  <h2>Publications</h2>
+  <div style="display: inline;">
     <a href="https://ui.adsabs.harvard.edu/search/q=%3D%20%20author%3A%22Moon%2C%20Sanghyuk%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">(ADS query)</a>
-    <div style="clear:both"></div>
+  </div>
+  <div style="clear:both"></div>
   <ul>
+    <li> <a href="https://arxiv.org/abs/2409.03226">Theory of Turbulent Equilibrium Spheres with Power-Law Linewidth-Size Relation</a><br>
+      <small><b>Sanghyuk Moon</b> &amp; Eve C. Ostriker 2024, accepted for publication in ApJ</small>
     <li> <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>Effects of magnetic fields on gas dynamics and star formation in nuclear rings</a><br>
       <small><b>Sanghyuk Moon</b>, Woong-Tae Kim, Chang-Goo Kim, &amp; Eve C. Ostriker 2023, ApJ, 946, 114</small>
     <li> <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>Effects of varying mass inflows on star formation in nuclear rings of barred galaxies</a><br>
@@ -40,11 +83,6 @@
     <li> <a href=https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract>Equilibrium sequences and gravitational instability of rotating isothermal rings</a><br>
       <small>Woong-Tae Kim, <b>Sanghyuk Moon</b> 2016, ApJ, 829, 45</small>
   </ul>
-  </div>
-
-  <h2> Athena++ with self-gravity in 3D cylindrical grid </h2>
-  A version of the Athena++ code with an open-BC Poisson solvers in 3D Cartesian and cylindrical grids can be found in <a href="https://github.com/sanghyukmoon/athena-public-version">https://github.com/sanghyukmoon/athena-public-version</a>.
-  It implements a generalized James algorithm described in our method paper <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract">Moon, Kim, &amp; Ostriker (2019)</a>.
 
   <h2> Movies </h2>
   <iframe width="420" height="255"
@@ -60,9 +98,6 @@
     src="https://www.youtube.com/embed/sHMzJDoTxd8">
   </iframe>
 
-  <h2> Curriculum Vitae </h2>
-  <a href="CV/cv.pdf">Link to my CV</a>
-
 <!--
   <h2> Miscellaneous </h2>
     <a href="vim_tips.html">VIM</a><br>
@@ -73,6 +108,7 @@
 -->
 
   <address>Last update : 12 Jul 2023</address>
+</div>
 </body>
 
 </html>

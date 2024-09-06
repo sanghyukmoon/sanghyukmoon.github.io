@@ -11,10 +11,10 @@ html {
 }
 
 body {
-  font-family: 'MaruBuri-Regular', 'Helvetica', 'sans-serif';
+  font-family: 'MaruBuri-Regular', 'Georgia', 'serif';
   font-size: larger;
   color: black;
-  background-color: #BCB69C;
+  background-color: #ECE8DC;
   vertical-align: middle;
   text-align: left;
   margin-top: 5em;
@@ -25,9 +25,15 @@ body {
   max-width: 1000px;
 }
 
+.content {
+  padding: 40px;
+  border: 2px solid black;
+  /* background-color: #BCB69C; */
+  background-color: #C5BB9A;
+}
+
 img {
   max-width: 100%;
-  display: block;
 }
 
 iframe {
@@ -41,31 +47,43 @@ img#profile {
   margin-bottom: 1em;
 }
 
-h1, h2, h3 {
-  font-family: 'MaruBuri-Regular', "Verdana", sans-serif;
+h1, h2, h3, h4 {
+  font-family: 'MaruBuri-Regular', "Georgia", serif;
   text-align: left;
   color: DarkSlateGrey;
 }
 
 h1 {
   padding-bottom: 0.5em;
-  border-bottom: solid;
+  border-bottom: 2px solid;
+}
+
+h2 {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 address {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: solid
+  border-top: 2px solid
 }
 
 a {
   color: MidnightBlue;
 }
-
-div#pub {
+/*
+div#sections {
   clear: both;
 }
-
-div#pub h2 {
-  display: inline;
+*/
+#rectangle{
+    width:200px;
+    height:100px;
+    background:white;
 }
