@@ -33,15 +33,19 @@
       <p>
       <img id='email', src="email.png", width="30">
       Contact: sanghyuk.moon at princeton dot edu<br>
+
       <img id='cv', src="curriculum-vitae.png", width="30">
-      Resume: <a href="CV/cv.pdf">Link to my CV</a>
+      Resume: <a href="CV/cv.pdf">Link to my CV</a><br>
+
+      <img id='ads', src="ads_partial_logo_dark_background.svg", width="30">
+      Publications: <a href="https://ui.adsabs.harvard.edu/search/q=%3D%20%20author%3A%22Moon%2C%20Sanghyuk%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">Link to ADS</a>
       </p>
     </div>
   </div>
  
 
   <h2>Research</h2>
-    <h4> Quasi-equilibrium model for turbulent cores </h4>
+    <h4> Quasi-equilibrium model for turbulent prestellar cores </h4>
       A classical model for the structure and stability of prestellar cores is the Bonnor-Ebert sphere (BES).
       However, the BES does not take into account the internal turbulent motions within the cores, which are inherited from their turbulent formation environments.
       In <a href="https://arxiv.org/abs/2409.03226">Moon &amp; Ostriker (2024)</a>, we obtain a family of equilibrium solutions to the angle-averaged continuity and momentum equations with minimal assumptions: 1) turbulence is statistically isotropic and obeys a power-law linewidth-size relationship and 2) bulk rotation is negligible (but allowing radial infall motion).
@@ -58,31 +62,12 @@
       <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>Moon et al. (2022)</a>
       <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>Moon et al. (2023)</a>
 
-    <h4> Self-gravity in cylindrical grid </h4>
+    <h4> Self-gravity solver for cylindrical mesh </h4>
     Solving the Poisson equation under the open (vacuum) boundary conditions is a non-trivial problem.
     In particular, there has been a lack of efficient algorithm that works in cylindrical/spherical grids.
     In <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract">Moon, Kim, &amp; Ostriker (2019)</a>, we show that the algorithm introduced by <a href="https://ui.adsabs.harvard.edu/abs/1977JCoPh..25...71J/abstract">James (1977)</a> (see also <a href="https://ui.adsabs.harvard.edu/abs/1976CoPhC..12...33L/abstract">Lackner (1976)</a>) can be generalized to cylindrical coordinate system, providing an efficient self-gravity solver in cylindrical coordinate system.
     A version of the Athena++ code that implements this algorithm in 3D Cartesian and cylindrical grids can be found in <a href="https://github.com/sanghyukmoon/athena-public-version">https://github.com/sanghyukmoon/athena-public-version</a>.
 
-  <h2>Publications</h2>
-  <div style="display: inline;">
-    <a href="https://ui.adsabs.harvard.edu/search/q=%3D%20%20author%3A%22Moon%2C%20Sanghyuk%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">(ADS query)</a>
-  </div>
-  <div style="clear:both"></div>
-  <ul>
-    <li> <a href="https://arxiv.org/abs/2409.03226">Theory of Turbulent Equilibrium Spheres with Power-Law Linewidth-Size Relation</a><br>
-      <small><b>Sanghyuk Moon</b> &amp; Eve C. Ostriker 2024, accepted for publication in ApJ</small>
-    <li> <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>Effects of magnetic fields on gas dynamics and star formation in nuclear rings</a><br>
-      <small><b>Sanghyuk Moon</b>, Woong-Tae Kim, Chang-Goo Kim, &amp; Eve C. Ostriker 2023, ApJ, 946, 114</small>
-    <li> <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>Effects of varying mass inflows on star formation in nuclear rings of barred galaxies</a><br>
-      <small><b>Sanghyuk Moon</b>, Woong-Tae Kim, Chang-Goo Kim, &amp; Eve C. Ostriker 2022, ApJ, 925, 99</small>
-    <li> <a href=https://ui.adsabs.harvard.edu/abs/2021ApJ...914....9M/abstract>Star formation in nuclear rings with the TIGRESS framework</a><br>
-      <small><b>Sanghyuk Moon</b>, Woong-Tae Kim, Chang-Goo Kim, &amp; Eve C. Ostriker 2021, ApJ, 914, 9</small>
-    <li> <a href=https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract>A fast Poisson solver of second-order accuracy for isolated systems in three-dimensional Cartesian and cylindrical coordinates</a><br>
-      <small><b>Sanghyuk Moon</b>, Woong-Tae Kim, &amp; Eve C. Ostriker 2019, ApJS, 241, 24</small>
-    <li> <a href=https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract>Equilibrium sequences and gravitational instability of rotating isothermal rings</a><br>
-      <small>Woong-Tae Kim, <b>Sanghyuk Moon</b> 2016, ApJ, 829, 45</small>
-  </ul>
 
   <h2> Movies </h2>
   <iframe width="420" height="255"
@@ -107,7 +92,7 @@
     <a href="etc.html">etc</a><br>
 -->
 
-  <address>Last update : 12 Jul 2023</address>
+  <address>Last update : 6 Sep 2024</address>
 </div>
 </body>
 
