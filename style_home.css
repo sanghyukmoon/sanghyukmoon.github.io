@@ -38,10 +38,14 @@ body {
 }
 
 img {
+  margin-right: 1em;
+  float: left;
   max-width: 100%;
 }
 
 img#icon {
+  margin-right: 0em;
+  float: none;
   width: 30px;
 }
 
@@ -68,12 +72,6 @@ video {
   width: 50%;
 }
 
-img#profile {
-  float: left;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-
 h1, h2, h3, h4 {
   font-family: 'MaruBuri-Regular', "Georgia", serif;
   text-align: left;
@@ -91,8 +89,9 @@ h2 {
 }
 
 h4 {
+  clear: both;
   padding-bottom: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
 }
 
 address {
