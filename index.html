@@ -22,10 +22,15 @@
     </div>
     <div class="column" style="width: 65%;">
       <h2 style="padding-top:0;"> About </h2>
-      <p>I am a postdoctoral research associate at Princeton University.
+      <p>I am a EACOA Fellow at Korea Astronomy and Space Science Institute (KASI).
       My research focuses on star formation and the dynamics of the interstellar medium.
-      I am particularly interested in the detailed physical processes that govern the formation and evolution of prestellar cores within turbulent molecular clouds, seeking to understand the conditions that lead to the onset of gravitational collapse and the origin of the resulting mass distribution.
-      On larger scales, I also explore the interplay between large-scale bar-driven inflows, star formation, and further gas transport toward galactic nuclei.
+      I am particularly interested in the detailed physical processes that govern the formation and evolution of prestellar cores within turbulent molecular clouds, aiming to understand the rate and mass spectrum of self-gravitating turbulent fragmentation leading to star formation.
+      On larger scales, I am also interested in the interplay between large-scale bar-driven inflows, star formation, and further gas transport toward galactic nuclei.
+      </p>
+      <p>
+      Before joining KASI, I was a postdoctoral research associate at Princeton University (2022-2025).
+      I received my Ph.D. from Seoul National University in 2022.
+      </p>
 
       <p>
       <img id='icon', src="files/icon_email.png">
@@ -46,24 +51,25 @@
       <img src="files/tes_schematics2.png", width="185", border="2">
       A classical model for the structure and stability of prestellar cores is the Bonnor-Ebert sphere (BES).
       However, the BES does not take into account the internal turbulent motions within the cores, which are inherited from their turbulent formation environments.
-      In <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...975..295M/abstract">Moon &amp; Ostriker (2024)</a>, we obtain a family of quasi-equilibrium solutions for turbulent prestellar cores obeying power-law linewidth–size relations (which we call "turbulent equilibrium sphere" or TES) and propose a evolutionary scenario leading to collapse.
+      In <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...975..295M/abstract">Moon &amp; Ostriker (2024)</a>, we obtained a family of quasi-equilibrium solutions for turbulent prestellar cores obeying power-law linewidth–size relations (which we call "turbulent equilibrium sphere" or TES), which fully generalizes the classical Bonnor-Ebert analysis. Based on the stability property of the TES and gravitational potential landscape around cores, we proposed an evolutionary scenario leading to the onset of the collapse.
 
     <h4> Prestellar cores in turbulent clouds </h4>
       <img src="files/global_projection.png", width="215", border="2">
       Stars form from a dense molecular cloud core, but not every core forms stars.
-      To understand the physical conditions that determine the onset of the prestellar core collapse, in <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...987...78M/abstract">Moon &amp; Ostriker (2025a)</a> we conduct a carefully constructed suite of numerical simulations and analyze the dynamical evolution of individual "cores" to identify the critical conditions for collapse.
-      In <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988...82M/abstract">Moon &amp; Ostriker (2025b)</a>, we present physical properties of the cores at the onset of collapse and discuss the implications for the density threshold for star formation, massive prestellar cores, and core mass function.
+      To understand the physical conditions that determine the onset of the prestellar core collapse, in <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...987...78M/abstract">Moon &amp; Ostriker (2025a)</a> we conducted a carefully constructed suite of numerical simulations and analyze the dynamical evolution of individual "cores" to identify the critical conditions for collapse.
+      In <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988...82M/abstract">Moon &amp; Ostriker (2025b)</a>, we presented physical properties of the cores at the onset of collapse and discuss the implications for the density threshold for star formation, massive prestellar cores, and core mass function.
+      Our third paper in this series (<a href="https://arxiv.org/abs/2509.07083">Moon &amp; Ostriker 2025c</a>) discusses observational implications focusing on structure, kinematics, and lifetime of prestellar cores.
     <h4> Star formation in nuclear rings </h4>
       <img src="files/ring_mhd.png", width="215", border="2">
       Galactic centers occupy a unique junction in our understanding of galaxy evolution: They are the sites where the large-scale bar-driven inflows lead to strong starburst, with implications for the launching of galactic winds and the transport of gas into the vicinity of supermassive black holes.
       They also provide the closest laboratory to study the star formation in extreme environments.
-      In a series of papers (<a href=https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract>Kim &amp; Moon 2016</a>, <a href=https://ui.adsabs.harvard.edu/abs/2021ApJ...914....9M/abstract>Moon et al. 2021</a>, <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>2022</a>, <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>2023</a>), we use controlled numerical simulations to study the effects of various physical processes including gravitational instability, supernova feedback, (time-varying and spatially asymmetric) mass inflows along the bar, and magnetic fields on the star formation in nuclear rings at the barred galaxy centers.
+      In a series of papers (<a href=https://ui.adsabs.harvard.edu/abs/2016ApJ...829...45K/abstract>Kim &amp; Moon 2016</a>, <a href=https://ui.adsabs.harvard.edu/abs/2021ApJ...914....9M/abstract>Moon et al. 2021</a>, <a href=https://ui.adsabs.harvard.edu/abs/2022ApJ...925...99M/abstract>2022</a>, <a href=https://ui.adsabs.harvard.edu/abs/2023ApJ...946..114M/abstract>2023</a>), we used controlled numerical simulations to study the effects of various physical processes including gravitational instability, supernova feedback, (time-varying and spatially asymmetric) mass inflows along the bar, and magnetic fields on the star formation in nuclear rings at the barred galaxy centers.
 
     <h4> Self-gravity solver for cylindrical mesh </h4>
       <img src="files/torus_gi.jpg", width="250", border="2">
       Solving the Poisson equation under the open (vacuum) boundary conditions is a non-trivial problem.
       In particular, there has been a lack of efficient algorithm that works in cylindrical/spherical grids.
-      In <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract">Moon, Kim, &amp; Ostriker (2019)</a>, we show that the algorithm introduced by <a href="https://ui.adsabs.harvard.edu/abs/1977JCoPh..25...71J/abstract">James (1977)</a> (see also <a href="https://ui.adsabs.harvard.edu/abs/1976CoPhC..12...33L/abstract">Lackner (1976)</a>) can be generalized to cylindrical coordinate system, providing an efficient self-gravity solver in cylindrical coordinate system.
+      In <a href="https://ui.adsabs.harvard.edu/abs/2019ApJS..241...24M/abstract">Moon, Kim, &amp; Ostriker (2019)</a>, we showed that the algorithm introduced by <a href="https://ui.adsabs.harvard.edu/abs/1977JCoPh..25...71J/abstract">James (1977)</a> (see also <a href="https://ui.adsabs.harvard.edu/abs/1976CoPhC..12...33L/abstract">Lackner (1976)</a>) can be generalized to curvilinear coordinate systems, providing an efficient self-gravity solver in cylindrical grid.
       A version of the Athena++ code that implements this algorithm in 3D Cartesian and cylindrical grids can be found in <a href="https://github.com/sanghyukmoon/athena">https://github.com/sanghyukmoon/athena</a>.
 
 
@@ -79,7 +85,7 @@
     <a href="etc.html">etc</a><br>
 -->
 
-  <address>Last update : June 2025</address>
+  <address>Last update : Oct 2, 2025</address>
 </div>
 </body>
 
